@@ -4,3 +4,119 @@ DSA
 
 Design and Analysis of Algorithm
 ----------------------------------
+Chapter: 01 Introduction to DSA
+Chapter: 02 Problem Solving
+Chapter: 03 Time and Space Complexity
+Chapter: 04 Notations
+Chapter: 05 Aspects of Algorithms
+Chapter: 06 Mathematical Algorithms
+Chapter: 07 Bitwise opertations
+Chapter: 08 Recursion
+Chapter: 09 Arrays
+Chapter: 10 Matrix
+Chapter: 11 Searching and Sorting Techniques
+Chapter: 12 LinkedLists
+Chapter: 13 Stacks
+Chapter: 14 Queues
+Chapter: 15 Binary Trees
+Chapter: 16 Hashtables
+Chapter: 17 Hashing
+Chapter: 18 AVL Tree
+Chapter: 19 Dictionaries or Maps
+Chapter: 20 Graph
+Chapter: 21 Greedy
+Chapter: 22 Backtracking
+Chapter: 23 Dynamic programming
+
+before moving to dsa we are going to take some examples
+Music Players --> Spotify, Gana, Jio Savan
+
+data --> .mp3 songs
+searching, sorting, queue
+
+Linked list ---> Music Players
+
+Spam email detection
+-----------------------
+10 unknown company ---> 10 spam per day
+throw 'xyz' ---> spam
+String data structure ----> spam emails
+
+BookMyShow Application
+------------------------
+
+array data structure ---> 2-D arrays ---> reservation of seats
+
+
+Data Structure:
+---------------
+Arranging data in a proper structure is called as Data Structure or organizing data is 
+called as Data Strucutre.
+
+The following are various operation we can perform on Data Structures
+	
+	1. inserting new data
+	2. deletion of existing data
+	3. updation of existing data
+	4. Searching (Linear, Binary)
+	5. Sorting
+	etc
+
+Algorithm
+---------
+Step by step to solve a problem is called algorithm
+concentration on design part and implementaion on java
+english instruction
+
+Problem statement
+=======================
+implement a program to perform addtion of two programms
+
+Alg
+	1. read two numbers from user
+	2. use arithmetic operator to calculate result
+	3. c=a+b;
+	4. print result to console, screen, file or database
+
+Implementation:
+	
+	int addition(int a, int b)
+	{
+		int c;
+		c = a + b;
+		return c;
+	}
+
+java code:
+
+class Demo
+{
+	static int addition(int a, int b)
+	{
+		int c;
+		c = a + b;
+		return c;
+	}
+}
+
+class  Test
+{
+	public static void main(String[] args) 
+	{
+		System.out.println(Demo.addition(1,2));//3
+	}
+}
+
+
+some example and various possible solution we will foucs
+==========================================================
+1.  addition of two numbers
+2.  swapping of two numbers
+3.  max of two numbers
+4.  even or odd of two numbers
+5.  sum of n natural numbers
+6.  max of three numbers
+7.  factorial
+8.  prime number or not
+9.  fibnacci series
+10. tribonocii series
