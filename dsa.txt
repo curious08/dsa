@@ -120,3 +120,56 @@ some example and various possible solution we will foucs
 8.  prime number or not
 9.  fibnacci series
 10. tribonocii series
+
+Photos in Gallery
+---------------------
+which data structure followed in Gallery Application?
+Stack
+
+sending emails to People
+-----------------------------
+200 students
+send a mail to all students
+data structure => Queue
+
+File Explorer|Directory Explorer|Folder explorer
+-------------------------------------------------
+=> c:\code
+data structure => Tree
+
+GPS Navigation System
+---------------------------
+Travel from one location to another location
+data structure =>Graph
+
+trending videos in youtube which data strucure is used sir? just guess
+-----------------------------------------------------------
+Priority Queue
+
+Q ---> V1(2M), V2(5M), V3(1M), V4(6M), V5(3M)
+
+Sorting ---> V4, V2, V5, V1, V3
+
+Problem Statement:
+Write a program to swap two given integers.
+-----------------------------------------
+Algorithm:
+	=> read two parameters from the user
+	=> implement business logic related to swapping
+	
+	logic1
+	logic2
+	logic3
+	logic4
+	logic5
+	=> print the data before swapping and after swapping
+
+Note: In java call by refrence concept is not there.
+logic1:
+	=> declare one temp variable
+	=> print a and b value
+	    temp = a;
+	    a = b;
+	    b = temp;
+	=> print a and b value
+
