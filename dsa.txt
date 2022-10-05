@@ -173,3 +173,136 @@ logic1:
 	    b = temp;
 	=> print a and b value
 
+Implementation
+------------------------------
+import java.util.*;
+class Demo
+{
+	static void swap(int a, int b)
+	{
+		System.out.println("Before swapping a="+a+" and b="+b);
+		int temp;
+		temp = a;
+		a = b;
+		b = temp;
+		System.out.println("Before swapping a="+a+" and b="+b);
+	}
+}
+
+class  Test
+{
+	public static void main(String[] args) 
+	{
+		Scanner obj = new Scanner(System.in);
+		System.out.println("Enter a value ");
+		int a = obj.nextInt();
+		System.out.println("Enter b value ");
+		int b = obj.nextInt();
+		Demo.swap(a,b);
+
+	}
+}
+
+
+Logic2: 
+	=> print a and b value
+	=> by using addition and substraction
+		a = a + b;
+		b = a - b;
+		a = a - b;
+	=> print a and b value
+
+Implementation
+-------------------------
+import java.util.*;
+class Demo
+{
+	static void swap(int a, int b)
+	{
+		System.out.println("Before swapping a="+a+" and b="+b);
+		a = a + b;
+		b = a - b;
+		a = a - b;
+		System.out.println("Before swapping a="+a+" and b="+b);
+	}
+}
+
+class  Test
+{
+	public static void main(String[] args) 
+	{
+		Scanner obj = new Scanner(System.in);
+		System.out.println("Enter a value ");
+		int a = obj.nextInt();
+		System.out.println("Enter b value ");
+		int b = obj.nextInt();
+		Demo.swap(a,b);
+
+	}
+}
+
+Logic3: 
+	=> print a and b value
+	=> by using multiplication and division
+		a = a * b;
+		b = a / b;
+		a = a / b;
+	=> print a and b value
+
+Implementation
+-----------------------
+import java.util.*;
+class Demo
+{
+	static void swap(int a, int b)
+	{
+		System.out.println("Before swapping a="+a+" and b="+b);
+		a = a * b;
+		b = a / b;
+		a = a / b;
+		System.out.println("Before swapping a="+a+" and b="+b);
+	}
+}
+
+class  Test
+{
+	public static void main(String[] args) 
+	{
+		Scanner obj = new Scanner(System.in);
+		System.out.println("Enter a value ");
+		int a = obj.nextInt();
+		System.out.println("Enter b value ");
+		int b = obj.nextInt();
+		Demo.swap(a,b);
+
+	}
+}
+
+Algorithm:
+----------
+
+==> Step by step process to solve a problem is called as an algorithm.
+==> Here we will concentrate on design part but not on implementation (Java).
+==> no syntax, english instructions.
+
+
+Priori Analysis				   Posteriori Analysis
+----------------		           -------------------
+1. Algorithm				   1. Program
+2. Indepedent from programming lang	   2. Language dependent
+3. Hardware independent			   3. H/W dependent
+4. time and space complexities notations   4. time and space will be measured in bytes and sec
+
+
+Logic4: without using temp variable using bitwise operators
+------------------------------------------------------------
+	 ==> print a and b values
+	 ==> by using bitwise operators
+
+	 	a = a ^ b;
+		b = a ^ b;
+		a = a ^ b;	 	
+
+	 ==> print a and b value
+
+Note: Dec into Bin and Bin into Dec
