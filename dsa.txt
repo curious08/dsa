@@ -305,4 +305,175 @@ Logic4: without using temp variable using bitwise operators
 
 	 ==> print a and b value
 
-Note: Dec into Bin and Bin into Dec
+Note: you must know how to convert Dec into Bin and Bin into Dec
+
+1	2	4	8
+2^0	2^1	2^2	2^3
+
+10 => 1010
+9  => 1001
+7  => 0111
+14 => 1110
+
+0 ^ 0 =>0
+1 ^ 1 =>0
+1 ^ 0 =>1
+0 ^ 1 =>1
+
+Implementation
+-----------------------
+import java.util.*;
+class Demo
+{
+	static void swap(int a, int b)
+	{
+		System.out.println("Before swapping a="+a+" and b="+b);
+		a = a ^ b;
+		b = a ^ b;
+		a = a ^ b;
+		System.out.println("Before swapping a="+a+" and b="+b);
+	}
+}
+
+class  Test
+{
+	public static void main(String[] args) 
+	{
+		Scanner obj = new Scanner(System.in);
+		System.out.println("Enter a value ");
+		int a = obj.nextInt();
+		System.out.println("Enter b value ");
+		int b = obj.nextInt();
+		Demo.swap(a,b);
+
+	}
+}
+
+logic5 : without using temp variable by using single line
+-------------------------------------------------------------
+	=> print a and b values
+	=> by using single line
+
+	   a = (a+b)-(b=a);
+
+	=> print a and b value
+
+Implementation
+--------------------
+import java.util.*;
+class Demo
+{
+	static void swap(int a, int b)
+	{
+		System.out.println("Before swapping a="+a+" and b="+b);
+		a = (a+b)-(b=a);
+		System.out.println("Before swapping a="+a+" and b="+b);
+	}
+}
+
+class  Test
+{
+	public static void main(String[] args) 
+	{
+		Scanner obj = new Scanner(System.in);
+		System.out.println("Enter a value ");
+		int a = obj.nextInt();
+		System.out.println("Enter b value ");
+		int b = obj.nextInt();
+		Demo.swap(a,b);
+
+	}
+}
+
+Design a program to find  max of two numbers
+----------------------------------------------
+Algorithm
+	1. read two numbers from user
+	2. apply logic 
+	  version1
+		Ternary operator
+		(condition)?tb:fb
+		(a>b)?a:b
+	  version2
+		Math.max(a,b)
+	3. print the result
+
+Implementation
+------------------
+import java.util.*;
+class Demo
+{
+	static int max_version1(int a, int b)
+	{
+		//manual code
+		return (a>b)?a:b;
+	}
+	static int max_version2(int a, int b)
+	{
+		return Math.max(a,b);
+	}
+
+}
+
+class  Test
+{
+	public static void main(String[] args) 
+	{
+		Scanner obj = new Scanner(System.in);
+		System.out.println("Enter a value ");
+		int a = obj.nextInt();
+		System.out.println("Enter b value ");
+		int b = obj.nextInt();
+		System.out.println("Max value from version1: "+Demo.max_version1(a,b));
+		System.out.println("Max value from version2: "+Demo.max_version2(a,b));
+
+	}
+}
+
+Design a program to find where the given number is odd or even
+----------------------------------------------------------------
+Algorithm
+	1. read the number n value from the user
+	2. if n is divisble by 2 means "even" else "odd"
+		if(n%2==0)
+			print even
+		else
+			print odd
+
+Implementation
+-------------------
+import java.util.*;
+class Demo
+{
+	static String check_evenorodd(int n)
+	{
+		//manual code
+		return (n%2==0)?"Even Number":"Odd Number";
+	}
+
+}
+
+class  Test
+{
+	public static void main(String[] args) 
+	{
+		Scanner obj = new Scanner(System.in);
+		System.out.println("Enter n value ");
+		int n = obj.nextInt();
+		System.out.println(Demo.check_evenorodd(n));
+	}
+}
+
+Design a program to find sum of N natural numbers
+---------------------------------------------------
+Algorithm
+	1. read n value from the user
+	2. apply the logic to find sum of n natural numbers
+	Logic1
+		loop
+	Logic2
+		recursion
+	Logic3
+		Math formula ---> n*(n+1)/2
+	3. print reult on the screen
+
